@@ -13,3 +13,6 @@ function maxElementVector(vector) {
 }
 
 console.log(maxElementVector([3, 5, 7, 2, 8, -1]));
+
+const max = Math.max(...[10, 4, 2, 15, 6]);
+console.log(max);
