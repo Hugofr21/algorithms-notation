@@ -1,3 +1,4 @@
+// hae and via ecy
 function encryptString(str) {
   let part = str.split("");
   let column = Math.ceil(Math.sqrt(part.length));
