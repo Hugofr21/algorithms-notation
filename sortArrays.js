@@ -1,4 +1,4 @@
-function mergeArrays(arr) {
+function sortArrays(arr) {
   let flatArray = arr.flat();
   flatArray.sort((a, b) => a - b);
   console.log("Flat Array:", flatArray);
@@ -9,11 +9,14 @@ function mergeArrays(arr) {
     merged.push(flatArray.slice(i, i + chunkSize));
   }
 
-  console.log("Merged:", merged);
+  return merged;
 }
 
-mergeArrays([
-  [1, 20, 3],
-  [42, 50],
-  [6, 7, 8, 9, 10],
-]);
+console.log("Merged Chunks:");
+console.log(
+  sortArrays([
+    [1, 20, 3],
+    [42, 50],
+    [6, 7, 8, 9, 10],
+  ])
+);
